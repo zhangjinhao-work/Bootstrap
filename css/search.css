@@ -1,0 +1,24 @@
+body{
+	font-family: "'Microsoft YaHei', sans-serif";
+}
+/*用户搜索*/	
+.user_search{
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-top: none
+}
+
+#foot{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+a.list-group-item.btn.btn-primary{
+	text-align: left;
+}
+#foot{
+	text-align: center;
+}
+#foot p{
+	margin-bottom: 10px
+}

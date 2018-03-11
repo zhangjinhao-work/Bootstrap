@@ -1,0 +1,22 @@
+body{
+	font-family: "'Microsoft YaHei', sans-serif";
+}
+
+.progress{
+	margin-bottom: 15px;
+}
+
+.w64{
+	height: 64px;
+	width: 64px;
+	border-radius: 50%;
+}
+.btn{
+	margin-top: 20px;
+}
+#foot{
+	text-align: center;
+}
+#foot p{
+	margin-bottom: 10px
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap | 项目实例</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/list.css">
+	<link rel="icon" href="../images/my.jpeg">	    
+    
+  </head>
+  <body>
+      <!-- 导航栏 -->
+    <div class="title">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Maizi Admin</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台页面</a></li>
+                            <li><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+                            <li class="active"><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
+                            <li><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a></li>                                            
+                                          <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+                                          <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+                                          <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a></li>
+                                          <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>  
+                                        </ul>
+                                </li>
+                                <li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+
+                        </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="list-group">
+                        <a href="content.html" class="list-group-item active">内容管理</a>
+                        <a href="content_post.html" class="list-group-item">添加内容</a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="page-header">
+                        <h1>内容管理</h1>
+                    </div>
+                    <ul class="nav nav-tabs">
+                      <li role="presentation" class="active"><a href="user_list.html">内容管理</a></li>
+
+                     
+                    </ul>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>文章标题</th>
+                                <th>作者</th>
+                                <th>发布时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>前端工程师该何去何从</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>产品经理常犯的7大错误，你造吗？</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>如何正确使用python系统</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>C语言const修饰符怎样使用？</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Android开发用onCreateOptionsMenu()如何创建</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>怎样才能成为一名优秀的前端开发工程师</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Android今年推出了哪些新技术</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>display的32种学法</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>JavaScript背包问题详解</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>一个三年工作经验的Web 工程师的经验之谈</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>浅谈浏览器http的缓存机制</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>程序员和用户</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>阿里给程序员准备的开源年货，你收到了吗？</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2017年崛起的JS项目</th>
+                            <td>张三</td>
+                            <td>2017/01/01</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      操作&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">编辑</a></li>
+                                      <li><a href="#">删除</a></li>
+                                      <li><a href="#">全局置顶</a></li>
+
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        </tbody>
+                    </table>
+
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        
+
+
+        <section id="foot">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>© 2012-2017 成都麦子信息技术有限公司
+                  蜀ICP备13014270号-4 Version 5.0.0 release20160127</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        
+        
+
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
